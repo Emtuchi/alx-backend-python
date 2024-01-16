@@ -2,7 +2,7 @@
 
 
 import asyncio
-from random import uniform
+import random
 
 
 ''' Write an asynchronous coroutine that takes in an integer
