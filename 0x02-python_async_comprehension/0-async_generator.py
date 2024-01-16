@@ -8,9 +8,11 @@
 
 import asyncio
 import random
+from typing import Generator
 
-async def async_generator():
-    ''' Generator that yields a random value between 0 and 10 every second,
+
+async def async_generator() -> Generator[float, None, None]:
+    '''Generator that yields a random value between 0 and 10 every second,
         10 times. '''
     n: int = 0
     while n < 10:
